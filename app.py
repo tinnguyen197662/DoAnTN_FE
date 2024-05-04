@@ -1,6 +1,6 @@
 import streamlit as st
-# from flask import Flask, jsonify, request
-# from langdetect import detect
+from flask import Flask, jsonify, request
+from langdetect import detect
 import requests
 from IPython.display import HTML
 # Set favicon
