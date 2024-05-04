@@ -1,6 +1,6 @@
 import streamlit as st
-from flask import Flask, jsonify, request
-from langdetect import detect
+# from flask import Flask, jsonify, request
+# from langdetect import detect
 import requests
 from IPython.display import HTML
 # Set favicon
@@ -62,7 +62,8 @@ st.markdown(
 question_input = st.text_input("**Question:**")
 
 if question_input:
-    language = detect(question_input)
+    # language = detect(question_input)
+    language = 'vi'
     
     if language == 'en':
         no_answer = 'No answer found for this question'
